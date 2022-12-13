@@ -12,13 +12,16 @@ header {
     height: 10vh;
     background-color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     font-family: 'montserrat' , sans-serif;
 }
 
+.logoHeader{
+    display: none;
+}
+
 .navHeader {
-    
     width: 40%;
     display: flex;
     align-items: center;
@@ -43,7 +46,7 @@ li {
 
 main {
     width: 100%;
-    height: 180vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
 }
@@ -105,7 +108,6 @@ transform: scale(1.1);
 }
 
 footer{
-    width: 100%;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -144,17 +146,34 @@ footer{
 }
 
 
-
 @media (max-width: 500px){
 
     header{
-    width: 100%;
-    height: 5vh;
+        justify-content: space-between;
+       height: 6vh;
     }
 
     h1{
         font-size: 20px;
+        position: relative;
+        right: 110px;
     }
+
+    .divHeader{
+        background-color: black;
+        width: 100px;
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoHeader{
+        height: 5vh;
+        width: 10vw;
+        display: flex;
+    }
+
 
     .navHeader{
         display: none;
@@ -177,7 +196,7 @@ footer{
     }
     
     main{
-        height: 350vh;
+        height: 430vh;
     }
 
 
@@ -186,19 +205,30 @@ footer{
         flex-direction: column;
         flex-wrap: nowrap;
        padding: 0;
-       height: 250vh;
+       height: 350vh;
+    }
+
+    .imgMain{
+        width: 70%;
     }
 
    footer{
     flex-direction: column;
+    height: 28vh;
+    justify-content: space-around;
    }
 
    .navFooter {
     background-color: aqua;
-    width: 100%;
+    width: 70%;
    }
 
-   .tituloFooter {
+   .imgFooter{
+    width: 16px;
    }
+
+  
+   
+   
 
 }
